@@ -1,0 +1,8 @@
+*~
+*.swp
+.xmonad/xmonad-i386-linux
+.xmonad/xmonad-x86_64-freebsd
+.xmonad/xmonad.errors
+.xmonad/xmonad.o
+.xmonad/xmonad.hs.*
+.xmonad/xmonad.hi

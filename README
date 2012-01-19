@@ -1,0 +1,4 @@
+# To set the default browser on an ubuntu system use:
+sudo update-alternatives --config gnome-www-browser
+sudo update-alternatives --config x-www-browser
+# and System Settings -> System info -> Default Applications
