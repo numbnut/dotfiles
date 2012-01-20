@@ -6,3 +6,4 @@
 .xmonad/xmonad.o
 .xmonad/xmonad.hs.*
 .xmonad/xmonad.hi
+.vim/.netrwhist
