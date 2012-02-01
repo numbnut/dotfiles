@@ -256,6 +256,7 @@ myManageHook = composeAll
     , resource  =? "kdesktop"       --> doIgnore
     , isDialog			    --> doCenterFloat
     , isFullscreen		    --> doFullFloat  
+    , className =? "Kcalc"	    --> doCenterFloat 
     , className =? "Firefox"        --> doShift "4"
     , className =? "Thunderbird"    --> doShift "5"
     , className =? "Eclipse"        --> doShift "2"
@@ -320,7 +321,10 @@ main = xmonad =<< statusBar myBar myPP toggleStrutsKey defaults
 myBar = "xmobar"
 
 -- Custom PP, configure it as you like. It determines what is being written to the bar.
-myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "<" ">" }
+myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "<" ">"
+		, ppTitle   = xmobarColor "green"  "" . shorten 40
+                , ppVisible = wrap "(" ")"
+		}
 
 -- Key binding to toggle the gap for the bar.
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
