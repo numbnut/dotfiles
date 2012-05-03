@@ -1,0 +1,7 @@
+[ui]
+username = Niklas Wilcke <niklas@wilckes.de>
+[extensions]
+color= 
+hgext.churn=
+hgext.graphlog=
+hgext.purge=

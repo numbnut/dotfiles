@@ -3,12 +3,14 @@
 trayer --edge top --align center --SetDockType true --SetPartialStrut true \
     --expand true --width 10 --transparent true --tint 0x000000 --height 11&
 xterm &
+xterm &
+parcellite &
 pcmanfm &
 gvim &
 skype &
 pidgin &
 firefox &
-# wicd-client &
+wicd-client &
 # blueman
 sleep 5 &
 thunderbird &
