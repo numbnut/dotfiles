@@ -32,3 +32,9 @@ nmap <silent> ,sv :so $MYVIMRC<cr>
 
 " shortcut to exit insert mode
 imap jj <ESC> 
+
+" no tabs and 2 spaces as tab
+:set tabstop=2
+:set shiftwidth=2
+:set expandtab
+
