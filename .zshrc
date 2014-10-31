@@ -3314,3 +3314,8 @@ zrclocal
 # Local variables:
 # mode: sh
 # End:
+
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
+
+# add system tools to user path
+export PATH="$PATH:/usr/local/sbin:/usr/sbin:/sbin"
