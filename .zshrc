@@ -3319,3 +3319,9 @@ zrclocal
 
 # add system tools to user path
 export PATH="$PATH:/usr/local/sbin:/usr/sbin:/sbin"
+
+# add user bin dir to path
+export PATH="$PATH:$HOME/bin"
+
+# git subrepo
+# source /home/niklas/opt/git-subrepo/.rc
